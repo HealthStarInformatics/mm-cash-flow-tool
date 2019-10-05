@@ -4,7 +4,7 @@ import "../styles/MainNav.scss";
 
 function MainNav(props) {
     return (
-        <div className="nav-wrapper">
+        <nav className="main-nav-wrapper">
             <div>
                 <h3>Digital Money Toolkit</h3>
             </div>
@@ -14,10 +14,8 @@ function MainNav(props) {
                     <div className="toggle-button_line"/>
                     <div className="toggle-button_line"/> 
                 </button>
-            </div>
-            
-           
-        </div>
+            </div> 
+        </nav>
     );
 }
 
