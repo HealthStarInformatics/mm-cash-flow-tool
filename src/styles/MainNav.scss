@@ -1,0 +1,36 @@
+.nav-wrapper {
+    display:flex;
+    height: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color:lightgreen;
+
+    div {
+        margin-left: 10px;
+    }
+
+    div:last-child {
+        align-self: center;
+    }
+}
+
+
+
+
+
+
+
+.toggle-button_line {
+    width: 30px;
+    height: 2px;
+    margin-top:5px;
+    margin-bottom: 5px;
+    background: white;
+}
+
+
+@media screen and (max-width: 450px) {
+    .toggle-button {
+        display:in-line;
+    }
+}
