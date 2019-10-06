@@ -1,0 +1,35 @@
+.cft-time-segment-nav-wrapper {
+    padding: 10px;
+    text-align:center;
+    margin:25px 0px;
+
+    div {
+        display:inline-block;
+        width:40%;
+    }
+    ul {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        height: 100%;
+
+        border: 1px solid; 
+        box-shadow: 3px 5px;
+
+        li {
+            width: 100%;
+            border-left:1px solid;
+        }
+        
+        li:first-child {
+            border-left:none;
+        }
+    }
+
+   
+
+    
+}

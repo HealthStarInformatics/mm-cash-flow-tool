@@ -5,7 +5,10 @@ import './App.css';
 
 import MainNav from './components/MainNav';
 import CashFlowToolHome from './components/CashFlowToolHome';
-import CashFlowTool from './components/CashFlowTool';
+import CFTIncome from './components/CFTIncome';
+import CFTExpenses from './components/CFTExpenses';
+import CFTSummary from './components/CFTSummary';
+import CFTRecommendations from './components/CFTRecommendations';
 
 
 class App extends React.Component{
@@ -22,7 +25,10 @@ class App extends React.Component{
             <Router>
               <Switch>
                 <Route exact path='/' component={CashFlowToolHome} />
-                <Route exact path='/cashflowtool/:cftsection' component={CashFlowTool} />
+                <Route exact path='/cashflowtool/incomes' component={CFTIncome} />
+                <Route exact path='/cashflowtool/expenses' component={CFTExpenses} />
+                <Route exact path='/cashflowtool/summary' component={CFTSummary} />
+                <Route exact path='/cashflowtool/recommendations' component={CFTRecommendations} />
               </Switch>
             </Router> 
         </main>

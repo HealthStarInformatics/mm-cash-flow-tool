@@ -1,0 +1,32 @@
+.input-row-wrapper {
+
+    input {
+        text-align:center;
+        border: 0;
+        border-bottom: 2px solid;
+        padding:2px;
+        margin-right: 5px;
+        cursor:pointer;
+    }
+
+    select {
+        padding:2px;
+        margin-right:5px;
+        border: 2px solid;
+        cursor:pointer;
+
+        option {
+            text-align:center;
+        }
+        option[default] {
+            display:none;
+        }
+        
+    }
+
+    .trash {
+        padding-top:3px;
+        padding-left:2px;
+        cursor:pointer;
+    }
+}
