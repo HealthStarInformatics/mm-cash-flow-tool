@@ -25,7 +25,7 @@ class App extends React.Component{
             <Router>
               <Switch>
                 <Route exact path='/' component={CashFlowToolHome} />
-                <Route exact path='/cashflowtool/incomes' component={CFTIncome} />
+                <Route exact path='/cashflowtool/income' component={CFTIncome} />
                 <Route exact path='/cashflowtool/expenses' component={CFTExpenses} />
                 <Route exact path='/cashflowtool/summary' component={CFTSummary} />
                 <Route exact path='/cashflowtool/recommendations' component={CFTRecommendations} />

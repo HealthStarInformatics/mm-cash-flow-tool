@@ -1,22 +1,18 @@
 import React from 'react';
-import Link from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import '../styles/NavButton.scss';
 
-class NavButton extends React.Component {
-    constructor(props) {
-        super(props);
-        //this.state
-    }
-
-    render() {
+export default function NavButton(props) {
+        
         return(
             <div className="nav-button-wrapper">
-                <button>NEXT</button>
+                <div>{props.next}</div>
+                    <Link to={props.next}>
+                        <button>NEXT</button>
+                    </Link>
+
             </div>
             
-        )
+        );
     }
-}
-
-export default NavButton;

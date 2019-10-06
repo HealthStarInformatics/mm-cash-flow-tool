@@ -9,7 +9,7 @@ function CashFlowToolHome(props) {
             <h1>CASH FLOW</h1>
             <h2>Income management for better outcomes</h2>
             <h3>Useful recommendations, based on your unique situation, to help improve your financial well-being</h3>
-            <Link to="/cashflowtool/incomes">
+            <Link to="/cashflowtool/income">
                 <button className="get-started-button">GET STARTED</button>
             </Link>
         </div>

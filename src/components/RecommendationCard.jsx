@@ -1,18 +1,16 @@
 import React from 'react';
 
-class RecommendationCard extends React.Component {
-    constructor(props) {
-        super(props);
-        //this.state
-    }
+import '../styles/RecommendationCard.scss';
 
-    render() {
-        return(
-            <div className="recommendation-card-wrapper">
-                <h2>Recommendation Card will go here.</h2>
-            </div>
-        )
-    }
+export default function RecommendationCard(props) {
+    return(
+        <div className="recommendation-card-wrapper">
+            <h1>{props.title}</h1>
+            <h3>{props.desc}</h3>
+            <h2>{props.subtitle}</h2>
+            <h3>{props.subtitleDesc}</h3>
+            <button className="card-button">{props.buttonText}</button>
+        </div>
+    )
+
 }
-
-export default RecommendationCard;

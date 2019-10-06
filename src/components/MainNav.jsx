@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import "../styles/MainNav.scss";
 
@@ -6,7 +7,9 @@ function MainNav(props) {
     return (
         <nav className="main-nav-wrapper">
             <div>
-                <h3>Digital Money Toolkit</h3>
+                <h3>
+                    <Link to="/">Digital Money Toolkit</Link>
+                </h3>
             </div>
             <div>
                 <button className="toggle-button">
