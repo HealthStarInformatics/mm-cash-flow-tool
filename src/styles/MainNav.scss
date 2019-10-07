@@ -3,14 +3,24 @@
     height: 100%;
     flex-direction: row;
     justify-content: space-between;
-    background-color:lightgreen;
+    background-color:#20aa3f;
+    color: #ffffff;
 
     div {
         margin-left: 10px;
+        
     }
 
     div:last-child {
         align-self: center;
+    }
+    a {
+        color: #ffffff;
+
+        &:hover,
+        &:focus {
+            color:#66c368;
+        }
     }
 }
 

@@ -27,7 +27,7 @@ class Summary extends React.Component {
                     <h2>New Weekly Cash Flow</h2>
                     <h2>WEEKLY CASHFLOW NUMBER WILL GO HERE</h2>
                 </div>
-                <NavButton next="/cashflowtool/recommendations" />
+                <NavButton next="/cft/recommendations" />
             </div>
         );
     }

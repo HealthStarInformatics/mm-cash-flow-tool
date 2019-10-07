@@ -25,7 +25,7 @@ class Expenses extends React.Component {
                     <CFTTimePeriodNav />
                     <InputList />
                 </form>
-                <NavButton next="/cashflowtool/summary" />
+                <NavButton next="/cft/summary" />
             </div>
         );
     }

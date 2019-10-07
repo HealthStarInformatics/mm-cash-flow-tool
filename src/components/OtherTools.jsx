@@ -1,14 +1,12 @@
 import React from 'react';
 
-import NavButton from './NavButton';
-
-import '../styles/Recommendations.scss';
+import "../styles/OtherTools.scss";
 
 import ToolCard from './ToolCard';
 
-class Recommendation extends React.Component {
+class OtherTools extends React.Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.state = {
             ToolCards: [{
                 title: "Debt Management",
@@ -22,6 +20,12 @@ class Recommendation extends React.Component {
                 subtitle:  "Save for Retirement",
                 subtitleDesc:"Run the numbers to see how you can better meet your retirement goals.",
                 buttonText: "GO TO RETIREMENT CALENDAR"
+            }, {
+                title: "Car Loan Repayment",
+                desc: "Calculate monthly payment schedules to help pay down your car loan.",
+                subtitle:  "Car Loan Subtitle",
+                subtitleDesc:"Carloan subtitle description.",
+                buttonText: "UNDERSTAND YOUR CAR LOAN"
             }]
         }
     }
@@ -34,21 +38,19 @@ class Recommendation extends React.Component {
             </li>
         );
         return(
-            <div className='income-wrapper'>
-                <div className="instructions">
-                        <h1>Next Steps</h1>
-                        <h3>Here are a few actionable items to help better
-                            manage your weekly cash flow.</h3>
-                </div>
-                <ul className="recommendation-section">
-                   {cards}
+            <div className="other-tools-wrapper">
+                <h1>Also in the Toolkit</h1>
+                <h3>Life comes at you fast.  We're here to help
+                    you plan for the journey ahead.  DMDT offers
+                    more tools to help you react your financial destination.
+                </h3>
+                <ul>
+                    {cards}
                 </ul>
-                
-                <NavButton />
             </div>
+
         );
     }
 }
 
-export default Recommendation;
-
+export default OtherTools;

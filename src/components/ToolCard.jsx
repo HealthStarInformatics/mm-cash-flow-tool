@@ -1,8 +1,8 @@
 import React from 'react';
 
-import '../styles/RecommendationCard.scss';
+import '../styles/ToolCard.scss';
 
-export default function RecommendationCard(props) {
+function ToolCard(props) {
     return(
         <div className="recommendation-card-wrapper">
             <h1>{props.title}</h1>
@@ -14,3 +14,5 @@ export default function RecommendationCard(props) {
     )
 
 }
+
+export default ToolCard;

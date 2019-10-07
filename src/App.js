@@ -4,7 +4,7 @@ import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import MainNav from './components/MainNav';
-import CashFlowToolHome from './components/CashFlowToolHome';
+import CFTHome from './components/CFTHome';
 import CFTIncome from './components/CFTIncome';
 import CFTExpenses from './components/CFTExpenses';
 import CFTSummary from './components/CFTSummary';
@@ -24,11 +24,11 @@ class App extends React.Component{
         <main className="app-section">
             <Router>
               <Switch>
-                <Route exact path='/' component={CashFlowToolHome} />
-                <Route exact path='/cashflowtool/income' component={CFTIncome} />
-                <Route exact path='/cashflowtool/expenses' component={CFTExpenses} />
-                <Route exact path='/cashflowtool/summary' component={CFTSummary} />
-                <Route exact path='/cashflowtool/recommendations' component={CFTRecommendations} />
+                <Route exact path='/' component={CFTHome} />
+                <Route exact path='/cft/income' component={CFTIncome} />
+                <Route exact path='/cft/expenses' component={CFTExpenses} />
+                <Route exact path='/cft/summary' component={CFTSummary} />
+                <Route exact path='/cft/recommendations' component={CFTRecommendations} />
               </Switch>
             </Router> 
         </main>

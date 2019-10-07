@@ -8,16 +8,16 @@ function CFTNav(props) {
         <nav className="cft-nav-wrapper">
             <ul>
                 <li className="incomes">
-                    <Link to="/cashflowtool/incomes">Incomes</Link>
+                    <Link to="/cft/incomes">Incomes</Link>
                 </li>
                 <li clssName="expenses">
-                    <Link to="/cashflowtool/expenses">Expenses</Link>
+                    <Link to="/cft/expenses">Expenses</Link>
                 </li>
                 <li className="summary">
-                    <Link to="/cashflowtool/summary">Summary</Link>
+                    <Link to="/cft/summary">Summary</Link>
                 </li>
                 <li className="recommendations">
-                    <Link to="/cashflowtool/recommendations">Recommendations</Link>
+                    <Link to="/cft/recommendations">Recommendations</Link>
                 </li>
             </ul>
         </nav>

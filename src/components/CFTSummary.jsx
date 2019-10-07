@@ -3,9 +3,9 @@ import React from 'react';
 import CFTNav from './CFTNav';
 import Summary from './Summary';
 
-import '../styles/CashFlowTool.scss';
+import '../styles/CFT.scss';
 
-class CashFlowTool extends React.Component {
+class CFT extends React.Component {
     constructor(props) {
         super(props)
         //this.state
@@ -24,4 +24,4 @@ class CashFlowTool extends React.Component {
 }
     
 
-export default CashFlowTool;
+export default CFT;
