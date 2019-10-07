@@ -6,6 +6,7 @@ import "../styles/CFTHero.scss";
 function CFTHero(props) {
     return(
         <div className="cft-hero-wrapper">
+            <span><i class="far fa-money-bill-alt"></i></span>
             <h1>CASH FLOW</h1>
             <h2>Income management for better outcomes</h2>
             <h3>Useful recommendations, based on your unique situation, to help improve your financial well-being</h3>

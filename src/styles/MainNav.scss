@@ -11,9 +11,15 @@
         
     }
 
+    .logo {
+        display:flex;
+        flex-direction: row;
+    }
+
     div:last-child {
         align-self: center;
     }
+
     a {
         color: #ffffff;
 
@@ -21,6 +27,13 @@
         &:focus {
             color:#66c368;
         }
+    }
+
+    span {
+        align-self:center;
+        font-size: 1.8rem;
+        padding: 3px;
+        margin-right: 4px;
     }
 }
 

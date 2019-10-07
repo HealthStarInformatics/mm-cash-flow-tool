@@ -4,7 +4,8 @@ import '../styles/ToolCard.scss';
 
 function ToolCard(props) {
     return(
-        <div className="recommendation-card-wrapper">
+        <div className="card-wrapper">
+            <span>{props.img}</span>
             <h1>{props.title}</h1>
             <h3>{props.desc}</h3>
             <h2>{props.subtitle}</h2>

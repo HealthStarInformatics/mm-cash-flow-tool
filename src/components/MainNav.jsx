@@ -6,7 +6,8 @@ import "../styles/MainNav.scss";
 function MainNav(props) {
     return (
         <nav className="main-nav-wrapper">
-            <div>
+            <div className='logo'>
+                <span><i class="far fa-money-bill-alt"></i></span>
                 <h3>
                     <Link to="/">Digital Money Toolkit</Link>
                 </h3>
