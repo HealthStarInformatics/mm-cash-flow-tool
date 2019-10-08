@@ -5,13 +5,7 @@ import Summary from './Summary';
 
 import '../styles/CFT.scss';
 
-class CFT extends React.Component {
-    constructor(props) {
-        super(props)
-        //this.state
-    }
-
-    render() {
+const CFT = () => {
         return(
             <div className="cft-wrapper"> 
                 <CFTNav />
@@ -19,8 +13,6 @@ class CFT extends React.Component {
             </div>
                 
         ) ;
-    }
-
 }
     
 

@@ -5,7 +5,7 @@ import "../styles/CFTHome.scss";
 import CFTHero from './CFTHero';
 import OtherTools from './OtherTools';
 
-function CFTHome(props)  {
+const CFTHome = () => {
     return(
         <div className="cft-home-wrapper">
             <CFTHero />
@@ -13,7 +13,6 @@ function CFTHome(props)  {
         </div>
 
     );
-
 }
 
 export default CFTHome;

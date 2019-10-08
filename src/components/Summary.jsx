@@ -6,18 +6,12 @@ import ExpenseSummary from './ExpenseSummary';
 
 import '../styles/Income.scss';
 
-class Summary extends React.Component {
-    constructor(props) {
-        super(props)
-        //this.state
-    }
-
-    render() {
+const Summary = () => {
         return(
             <div className='income-wrapper'>
                 <div className="instructions">
                         <h1>Let's Review</h1>
-                        <h3>Here is an overview of your incomes and expenditures.</h3>
+                        <p className="description">Here is an overview of your incomes and expenditures.</p>
                 </div>
                 <div className="summary-section">
                     <IncomeSummary />
@@ -30,7 +24,6 @@ class Summary extends React.Component {
                 <NavButton next="/cft/recommendations" />
             </div>
         );
-    }
 }
 
 export default Summary;

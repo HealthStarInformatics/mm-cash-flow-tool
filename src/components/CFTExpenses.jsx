@@ -5,21 +5,14 @@ import Expenses from './Expenses';
 
 import '../styles/CFT.scss';
 
-class CFT extends React.Component {
-    constructor(props) {
-        super(props)
-        //this.state
-    }
-
-    render() {
-        return(
-            <div className="cft-wrapper"> 
-                <CFTNav />
-                <Expenses />
-            </div>
-                
-        ) ;
-    }
+const CFT = () => {
+    return(
+        <div className="cft-wrapper"> 
+            <CFTNav />
+            <Expenses />
+        </div>
+            
+    ) ;
 
 }
     

@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom';
 
 import "../styles/MainNav.scss";
 
-function MainNav(props) {
+const MainNav = () => {
     return (
         <nav className="main-nav-wrapper">
             <div className='logo'>
                 <span><i class="far fa-money-bill-alt"></i></span>
-                <h3>
+                <p className="link-description">
                     <Link to="/">Digital Money Toolkit</Link>
-                </h3>
+                </p>
             </div>
             <div>
                 <button className="toggle-button">

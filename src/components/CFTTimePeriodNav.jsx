@@ -3,7 +3,7 @@ import React from 'react';
 
 import '../styles/CFTTimePeriodNav.scss';
 
-function CFTTimePeriodNav(props) {
+const CFTTimePeriodNav = () => {
     return(
         <nav className="cft-time-segment-nav-wrapper">
             <div>

@@ -2,14 +2,14 @@ import React from 'react';
 
 import '../styles/ToolCard.scss';
 
-function ToolCard(props) {
+const ToolCard = (props) => {
     return(
         <div className="card-wrapper">
             <span>{props.img}</span>
             <h1>{props.title}</h1>
-            <h3>{props.desc}</h3>
+            <p className="tagline">{props.desc}</p>
             <h2>{props.subtitle}</h2>
-            <h3>{props.subtitleDesc}</h3>
+            <p className="description">{props.subtitleDesc}</p>
             <button className="card-button">{props.buttonText}</button>
         </div>
     )

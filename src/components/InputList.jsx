@@ -4,13 +4,7 @@ import InputRow from './InputRow';
 
 import '../styles/InputList.scss';
 
-class InputList extends React.Component {
-    constructor(props) {
-        super(props);
-        //this.state
-    }
-
-    render() {
+const InputList = () => {
         return (
             <div className="income-inputs-wrapper">
                 <InputRow />
@@ -25,12 +19,8 @@ class InputList extends React.Component {
                     ➕
                     </span>
                 </div>
-                
-     
             </div>
-
-        )
-    }
+        );
 }
 
 export default InputList;

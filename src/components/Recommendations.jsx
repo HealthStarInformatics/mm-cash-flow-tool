@@ -37,8 +37,8 @@ class Recommendation extends React.Component {
             <div className='income-wrapper'>
                 <div className="instructions">
                         <h1>Next Steps</h1>
-                        <h3>Here are a few actionable items to help better
-                            manage your weekly cash flow.</h3>
+                        <p className="tagline">Here are a few actionable items to help better
+                            manage your weekly cash flow.</p>
                 </div>
                 <ul className="recommendation-section">
                    {cards}

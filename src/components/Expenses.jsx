@@ -6,20 +6,14 @@ import NavButton from './NavButton';
 
 import '../styles/Income.scss';
 
-class Expenses extends React.Component {
-    constructor(props) {
-        super(props)
-        //this.state
-    }
-
-    render() {
+const Expenses = () => {
         return(
             <div className='income-wrapper'>
                 <div className="instructions">
                         <h1>Where is is going?</h1>
-                        <h3>Use the form below to enter your daily or weekly expenses, 
+                        <p className="description">Use the form below to enter your daily or weekly expenses, 
                             along with their type, to help build an overview of your financial
-                            obligations.</h3>
+                            obligations.</p>
                 </div>
                 <form className="income-inputs-form">
                     <CFTTimePeriodNav />
@@ -28,7 +22,6 @@ class Expenses extends React.Component {
                 <NavButton next="/cft/summary" />
             </div>
         );
-    }
 }
 
 export default Expenses;

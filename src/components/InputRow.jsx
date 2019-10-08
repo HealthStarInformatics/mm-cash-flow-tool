@@ -2,13 +2,7 @@ import React from 'react';
 
 import '../styles/InputRow.scss';
 
-class InputRow extends React.Component {
-    constructor(props) {
-        super(props)
-        //this.state
-    }
-
-    render() {
+const InputRow = () => {
         return (
             <div className="input-row-wrapper">
                 <input type="number" name="Income Amount" min="0" size="15" placeholder="Income Amount" />
@@ -23,7 +17,6 @@ class InputRow extends React.Component {
                 <span className="trash" role="img" aria-label="trashbin">🗑</span>
             </div>
         );
-    }
 }
 
 export default InputRow;

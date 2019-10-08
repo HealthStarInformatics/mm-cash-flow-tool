@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 import '../styles/CFTNav.scss';
 
-function CFTNav(props) {
+const CFTNav = ()  => {
     return(
         <nav className="cft-nav-wrapper">
             <ul>
                 <li className="incomes">
-                    <Link to="/cft/incomes">Incomes</Link>
+                    <Link to="/cft/income">Incomes</Link>
                 </li>
                 <li clssName="expenses">
                     <Link to="/cft/expenses">Expenses</Link>
