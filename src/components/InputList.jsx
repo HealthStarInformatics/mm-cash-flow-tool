@@ -6,7 +6,7 @@ import '../styles/InputList.scss';
 
 const InputList = () => {
         return (
-            <div className="income-inputs-wrapper">
+            <div className="Incomes-inputs-wrapper">
                 <InputRow />
                 <InputRow />
                 <InputRow />

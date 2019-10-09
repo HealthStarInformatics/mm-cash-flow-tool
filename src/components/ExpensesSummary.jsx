@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ExpenseSummary = () => {
+const ExpensesSummary = () => {
     return(
         <div className="expense-summary-wrapper">
             <h2>Expense Summary will go here.</h2>
@@ -8,4 +8,4 @@ const ExpenseSummary = () => {
     );
 }
 
-export default ExpenseSummary;
+export default ExpensesSummary;

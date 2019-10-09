@@ -7,7 +7,7 @@ const MainNav = () => {
     return (
         <nav className="main-nav-wrapper">
             <div className='logo'>
-                <span><i class="far fa-money-bill-alt"></i></span>
+                <span><i className="far fa-money-bill-alt"></i></span>
                 <p className="link-description">
                     <Link to="/">Digital Money Toolkit</Link>
                 </p>

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import NavButton from './NavButton';
+import ToolNav from './ToolNav';
 
 import '../styles/Recommendations.scss';
 
@@ -18,7 +18,7 @@ class Recommendation extends React.Component {
                 buttonText: "LEARN HOW TO HANDLE DEBT"
             }, {
                 title: "Investments",
-                desc: "You've got an income surplus of $489.38.  Here are some resources to help put that money to work for you.",
+                desc: "You've got an Incomes surplus of $489.38.  Here are some resources to help put that money to work for you.",
                 subtitle:  "Save for Retirement",
                 subtitleDesc:"Run the numbers to see how you can better meet your retirement goals.",
                 buttonText: "GO TO RETIREMENT CALENDAR"
@@ -34,7 +34,7 @@ class Recommendation extends React.Component {
             </li>
         );
         return(
-            <div className='income-wrapper'>
+            <div className='Incomes-wrapper'>
                 <div className="instructions">
                         <h1>Next Steps</h1>
                         <p className="tagline">Here are a few actionable items to help better
@@ -44,7 +44,7 @@ class Recommendation extends React.Component {
                    {cards}
                 </ul>
                 
-                <NavButton />
+                <ToolNav back="/CFT/Summary" />
             </div>
         );
     }

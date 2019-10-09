@@ -5,7 +5,7 @@ import '../styles/InputRow.scss';
 const InputRow = () => {
         return (
             <div className="input-row-wrapper">
-                <input type="number" name="Income Amount" min="0" size="15" placeholder="Income Amount" />
+                <input type="number" name="Incomes Amount" min="0" size="15" placeholder="Incomes Amount" />
                 <select name="duration-type">
                     <option value="" default selected>Type</option>
                     <option value="hourly">Hourly</option>

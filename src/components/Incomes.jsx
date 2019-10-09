@@ -2,27 +2,25 @@ import React from 'react';
 
 import CFTTimePeriodNav from './CFTTimePeriodNav';
 import InputList from './InputList';
-import NavButton from './NavButton';
+import ToolNav from './ToolNav';
 
-import '../styles/Income.scss';
+import '../styles/Incomes.scss';
 
-const Income = () => {
-        return(
-            <div className='income-wrapper'>
+const Incomes = () => (
+            <div className='Incomes-wrapper'>
                 <div className="instructions">
                         <h1>What's coming in?</h1>
-                        <p className="description">Use the form below to enter your daily or weekly incomes, 
+                        <p className="description">Use the form below to enter your daily or weekly Incomes, 
                             along with their type, to help build an overview of the funds
                             you have available.</p>
                 </div>
-                <form className="income-inputs-form">
+                <form className="Incomes-inputs-form">
                     <CFTTimePeriodNav />
                     <InputList />
                 </form>
-                <NavButton next="/cft/expenses" />
+                <ToolNav next="/CFT/Expenses" />
             </div>
-        );
-}
+);
 
-export default Income;
+export default Incomes;
 

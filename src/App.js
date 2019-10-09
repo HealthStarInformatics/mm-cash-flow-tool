@@ -5,26 +5,18 @@ import './App.css';
 
 import MainNav from './components/MainNav';
 import CFTHome from './components/CFTHome';
-import CFTIncome from './components/CFTIncome';
-import CFTExpenses from './components/CFTExpenses';
-import CFTSummary from './components/CFTSummary';
-import CFTRecommendations from './components/CFTRecommendations';
-
+import CFT from './components/CFT';
 
 const App  = () => {
     return (
-      <div className="app-wrapper">
+      <Router>
         <MainNav />
-        <main className="app-section">
-              <Switch>
-                  <Route exact path='/' component={CFTHome} />
-                  <Route exact path='/cft/income' component={CFTIncome} />
-                  <Route exact path='/cft/expenses' component={CFTExpenses} />
-                  <Route exact path='/cft/summary' component={CFTSummary} />
-                  <Route exact path='/cft/recommendations' component={CFTRecommendations} />
-              </Switch>
-        </main>
-      </div>
+          <Switch>
+              <Route exact path='/' component={CFTHome} />
+              <Route path='/cft/:section' component={CFT} />
+          </Switch>
+      </Router>
+      
     );
 }
 
