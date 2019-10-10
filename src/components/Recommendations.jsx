@@ -2,7 +2,7 @@ import React from 'react';
 
 import ToolNav from './ToolNav';
 
-import '../styles/Recommendations.scss';
+import '../styles/Section.scss';
 
 import ToolCard from './ToolCard';
 
@@ -34,7 +34,7 @@ class Recommendation extends React.Component {
             </li>
         );
         return(
-            <div className='Incomes-wrapper'>
+            <div className='section-wrapper'>
                 <div className="instructions">
                         <h1>Next Steps</h1>
                         <p className="tagline">Here are a few actionable items to help better

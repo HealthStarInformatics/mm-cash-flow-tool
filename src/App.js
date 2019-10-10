@@ -4,16 +4,16 @@ import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 
 import MainNav from './components/MainNav';
-import CFTHome from './components/CFTHome';
+import DMTKHome from './components/DMTKHome';
 import CFT from './components/CFT';
 
 const App  = () => {
     return (
       <Router>
-        <MainNav />
+         <MainNav />
           <Switch>
-              <Route exact path='/' component={CFTHome} />
-              <Route path='/cft/:section' component={CFT} />
+              <Route exact path='/' component={DMTKHome} />
+              <Route exact path='/cft/:section' component={CFT} />
           </Switch>
       </Router>
       

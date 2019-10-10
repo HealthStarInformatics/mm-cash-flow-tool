@@ -1,11 +1,9 @@
 import React from 'react';
 
-import "../styles/CFTHome.scss";
-
 import CFTHero from './CFTHero';
 import OtherTools from './OtherTools';
 
-const CFTHome = () => {
+const DMTKHome = () => {
     return(
         <div className="cft-home-wrapper">
             <CFTHero />
@@ -15,4 +13,4 @@ const CFTHome = () => {
     );
 }
 
-export default CFTHome;
+export default DMTKHome;

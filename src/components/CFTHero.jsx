@@ -7,11 +7,11 @@ const CFTHero = () => {
     return (
         <div className="cft-hero-wrapper">
             <span><i className="far fa-money-bill-alt"></i></span>
-            <h1>CASH FLOW</h1>
-            <h2>Incomes management for better outcomes</h2>
+            <h1>CASH FLOW TOOL</h1>
+            <h2>Income management for better outcomes</h2>
             <p className="tagline">Useful recommendations, based on your unique situation, to help improve your financial well-being</p>
-            <Link to="/CFT/Incomes">
-                <button className="get-started-button">GET STARTED</button>
+            <Link to="/CFT/Overview">
+                <button className="card-btn">GET STARTED</button>
             </Link>
         </div>
 

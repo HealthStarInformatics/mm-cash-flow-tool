@@ -1,7 +1,7 @@
 import React from 'react';
 //import { Link } from 'react-router-dom';
 
-import '../styles/CFTTimePeriodNav.scss';
+// import '../styles/CFTTimePeriodNav.scss';
 
 const CFTTimePeriodNav = () => {
     return(

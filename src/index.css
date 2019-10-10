@@ -15,6 +15,7 @@
   --button-green-focus-color: #66c368;
 
 }
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -22,9 +23,60 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  text-align:center;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+button {
+  color: white;
+  background-color:#20aa3f;
+}
+
+a { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+.card-btn {
+  border:2px solid black;
+  box-shadow:2px 3px black;
+  width: 90%;
+  padding:10px;
+  margin:20px;
+  font-size: 1rem;
+}
+
+.sub-section-btn {
+  border: 1px solid black;
+  color:orange;
+}
+
+.tagline {
+  font-size: 1rem;
+  columns: #000000;;
+}
+
+.description {
+  font-size: .8rem;
+  margin: 10px 20px;
+  color:#000000;
+  text-align:left;
+}
+
+.input-frm {
+  margin: 20px;
+}
+
+.input-values {
+  font-size: 1.5rem;
+}
+
+
+ 
+
+

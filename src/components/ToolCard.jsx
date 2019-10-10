@@ -10,7 +10,7 @@ const ToolCard = (props) => {
             <p className="tagline">{props.desc}</p>
             <h2>{props.subtitle}</h2>
             <p className="description">{props.subtitleDesc}</p>
-            <button className="card-button">{props.buttonText}</button>
+            <button className="card-btn">{props.buttonText}</button>
         </div>
     )
 

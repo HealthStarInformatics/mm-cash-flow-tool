@@ -4,22 +4,30 @@ import { Link } from 'react-router-dom';
 import '../styles/ToolNav.scss';
 
 const ToolNav = (props) => {
-    console.log('props.next is ', props.next);
-    console.log('props.back is ', props.back);
         return(
-            <div className="tool-nav-wrapper">
-                {props.back ? (
-                    <Link to={props.back}>
-                        <button>Back</button>
-                    </Link>
-                ) : (
-                    <div>there is no props.back</div>
-                )}
-
-                    
-                    <Link to={props.next}>
-                        <button>NEXT</button>
-                    </Link>
+            <div className="tool-nav-wrapper"> 
+                    {props.back ? (
+                        <div>
+                            <Link to={props.back}>
+                                <button>BACK</button>
+                            </Link>
+                        </div>
+                    ) : (
+                        <div>
+                            there is no props.back
+                        </div>
+                    )}
+                    {props.next ? (
+                        <div>
+                            <Link to={props.next}>
+                            <button>NEXT</button>
+                            </Link>
+                        </div>
+                        ): (
+                        <div>
+                            there is no props.next.  Where will this go?
+                        </div>
+                    )} 
             </div>
         );
 }

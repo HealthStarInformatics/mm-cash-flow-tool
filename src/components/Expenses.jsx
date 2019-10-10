@@ -1,14 +1,13 @@
 import React from 'react';
 
-import CFTTimePeriodNav from './CFTTimePeriodNav';
 import InputList from './InputList';
 import ToolNav from './ToolNav';
 
-import '../styles/Incomes.scss';
+import '../styles/Section.scss';
 
 const Expenses = () => {
         return(
-            <div className='Incomes-wrapper'>
+            <div className='section-wrapper'>
                 <div className="instructions">
                         <h1>Where is is going?</h1>
                         <p className="description">Use the form below to enter your daily or weekly expenses, 
@@ -16,7 +15,7 @@ const Expenses = () => {
                             obligations.</p>
                 </div>
                 <form className="Incomes-inputs-form">
-                    <CFTTimePeriodNav />
+                    {/* <CFTTimePeriodNav /> */}
                     <InputList />
                 </form>
                 <ToolNav next="/CFT/Summary" back="/CFT/Incomes" />
