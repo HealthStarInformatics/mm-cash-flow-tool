@@ -7,7 +7,7 @@ const isActiveSection = (active, section) => (active === section ? "active" : nu
 // console.log('isActiveSection', isActiveSection);
 
 const CFTNav = (props) => {
-    console.log('props.', props.activeSection);
+    console.log('props from cftnav', props.activeSection);
     //console.log('isActiveSection', isActiveSection);
     return (
             <nav id="cft-nav-wrapper">

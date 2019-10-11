@@ -9,6 +9,12 @@ import Expenses from './Expenses';
 import Summary from './Summary';
 import Recommendations from './Recommendations';
 import IncomeStartingBalance from './IncomeStartingBalance';
+import IncomeJobOne from './IncomeJobOne';
+import IncomeJobTwo from './IncomeJobTwo';
+import IncomeHousingSubsidy from './IncomeHousingSubsidy';
+import IncomeSNAP from './IncomeSNAP';
+import IncomeTANF from './IncomeTANF';
+import IncomeOther from './IncomeOther';
 import ExpenseSubSection from './ExpenseSubSection';
 import SummarySubSection from './SummarySubSection';
 import RecommendationsSubSection from './RecommendationsSubSection';
@@ -25,39 +31,33 @@ class CFT extends React.Component {
                 return <Summary />;
             case 'Recommendations':
                 return <Recommendations />;
+            case 'IncomeStartingBalance':
+                return <IncomeStartingBalance />;
+            case 'IncomeJobOne':
+                return <IncomeJobOne />;
+            case 'IncomeJobTwo':
+                return <IncomeJobTwo />;
+            case 'IncomeHousingSubsidy':
+                return <IncomeHousingSubsidy />;
+            case 'IncomeSNAP':
+                return <IncomeSNAP />;
+            case 'IncomeTANF':
+                return <IncomeTANF />;
+            case 'IncomeOther':
+                return <IncomeOther />;
+            case 'ExpenseSubSection':
+                return <ExpenseSubSection />;
+            case 'SummarySubSection':
+                return <SummarySubSection />;
+            case 'RecommendationsSubSection':
+                return <RecommendationsSubSection />;
             default:
                 return <CFTOverview />;
         }
     }
 
-    findAndDisplaySubSection(section) {
-            switch(section) {
-                case 'Overview' || 'Incomes':
-                    return <IncomeStartingBalance />;
-                case 'Expenses':
-                    return <ExpenseSubSection />;
-                case 'Summary':
-                    return <SummarySubSection />;
-                case 'Recommendations':
-                    return <RecommendationsSubSection />;
-                default:
-                    return <CFTOverview />;
-            }
-       }
-
     render() {
-        console.log('this.props.match from cft', this.props.match);
         let section = this.props.match.params.section;
-        console.log('section is ', section);
-
-        let theSection=this.displayedSection(section);
-        let theSubsection= this.findAndDisplaySubSection(section);
-        console.log('theSection is ', theSection);
-        console.log('theSubsection is ', theSubsection);
-        //console.log('see the section component', this.displayedSection(section));
-        //console.log('see the subsection component', this.findAndDisplaySubSection(section));
-        
-        
         return (
             <main id="cft-wrapper">
                 <div className="cft-header">
@@ -66,7 +66,6 @@ class CFT extends React.Component {
                 <div>
                     <CFTNav activeSection={section} /> 
                     {this.displayedSection(section)}
-                    {this.findAndDisplaySubSection(section)}
                 </div>
             </main>
 

@@ -12,7 +12,7 @@ const IncomeTANF = () => {
                     <input className="input-values" type="number" name="income-tanf" />
                     <input type="submit" value="submit" />
                 </form>
-                <ToolNav prev="/cft/incomes/IncomeSNAP" next="/cft/incomes/IncomeOther" />
+                <ToolNav prev="/cft/IncomeSNAP" next="/cft/IncomeOther" />
             </div>
         );
 }

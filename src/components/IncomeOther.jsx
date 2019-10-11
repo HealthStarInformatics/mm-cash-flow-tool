@@ -5,7 +5,6 @@ import ToolNav from './ToolNav';
 import '../styles/SubSection.scss';
 
 const IncomeOther = () => {
-    console.log('this.props.match', this.props);
         return (
             <div className='sub-section-wrapper'>
                 <h1>Enter any other income that you receive</h1>
@@ -14,7 +13,7 @@ const IncomeOther = () => {
                     <input type="submit" value="submit" />
                 </form>
                 
-                <ToolNav prev="/cft/incomes/IncomeTANF" next="/cft/Expenses" />
+                <ToolNav prev="/cft/IncomeTANF" next="/cft/ExpenseSubSection" />
             </div>
         );
 }

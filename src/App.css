@@ -24,3 +24,8 @@
 a {
   text-decoration: none;
 }
+
+.input-values {
+  border:1px solid #000000;
+  font-size: 2rem;
+}

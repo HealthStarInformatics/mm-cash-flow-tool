@@ -6,9 +6,9 @@ import '../styles/ToolNav.scss';
 const ToolNav = (props) => {
         return(
             <div className="tool-nav-wrapper"> 
-                    {props.back ? (
+                    {props.prev ? (
                         <div>
-                            <Link to={props.back}>
+                            <Link to={props.prev}>
                                 <button>BACK</button>
                             </Link>
                         </div>

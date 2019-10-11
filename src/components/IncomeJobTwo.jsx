@@ -13,7 +13,7 @@ const IncomeJobTwo = () => {
                     <input type="submit" value="submit" />
                 </form>
                 
-                <ToolNav prev="/cft/incomes/IncomeJobOne" next="/cft/income/IncomeHousingSubsidy" />
+                <ToolNav prev="/cft/IncomeJobOne" next="/cft/IncomeHousingSubsidy" />
             </div>
         );
 }

@@ -13,7 +13,7 @@ const IncomeHousingSubsidy = () => {
                     <input type="submit" value="submit" />
                 </form>
                 
-                <ToolNav prev ="/cft/incomes/IncomeJobTwo" next="/cft/incomes/IncomeSNAP" />
+                <ToolNav prev="/cft/IncomeJobTwo" next="/cft/IncomeSNAP" />
             </div>
         );
 }

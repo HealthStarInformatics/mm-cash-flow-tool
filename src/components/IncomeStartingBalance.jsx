@@ -18,7 +18,7 @@ const IncomeStartingBalance = (props) => {
                     <input type="submit" value="submit" />
                 </form>
                 
-                <ToolNav next="/cft/incomes/IncomeJobOne" />
+                <ToolNav prev="/cft/CFTOverview" next="/cft/IncomeJobOne" />
             </div>
         );
 }
