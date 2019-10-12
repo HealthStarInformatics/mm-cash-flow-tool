@@ -1,7 +1,7 @@
 import React from 'react';
 
-import InputList from './InputList';
-import ToolNav from './ToolNav';
+// import InputList from './InputList';
+import ToolNavOLD from './ToolNavOLD';
 
 import '../styles/Section.scss';
 
@@ -16,9 +16,9 @@ const Expenses = () => {
                 </div>
                 <form className="Incomes-inputs-form">
                     {/* <CFTTimePeriodNav /> */}
-                    <InputList />
+                    {/* <InputList /> */}
                 </form>
-                <ToolNav next="/CFT/Summary" back="/CFT/Incomes" />
+                <ToolNavOLD next="/CFT/Summary" back="/CFT/Incomes" />
             </div>
         );
 }

@@ -1,9 +1,6 @@
 import React from 'react';
 
-// import CFTTimePeriodNav from './CFTTimePeriodNav';
-// import InputList from './InputList';
-import ToolNav from './ToolNav';
-import IncomeForm from './IncomeForm';
+import ToolNavOLD from './ToolNavOLD';
 
 import '../styles/Section.scss';
 
@@ -24,8 +21,7 @@ const Overview = (props) => {
                     <li>What's left is your ending balance.</li>
                     <li>Copy your ending balance for the week to the beginning balance of the next week..</li>
                 </ul>
-                {/* <IncomeForm /> */}
-                <ToolNav next="/cft/IncomeForm" />
+                <ToolNavOLD next="/cft/UseQuestions" />
             </div>
         );
 }

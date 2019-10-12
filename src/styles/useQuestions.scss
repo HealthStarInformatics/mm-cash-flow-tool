@@ -1,0 +1,47 @@
+.question-wrapper {
+    margin: 10px;
+    padding: 20px;
+
+    div {
+        margin-bottom: 30px;
+
+        .question-type {
+            font-size: 1.8rem;
+            text-align:left;
+            color:#66c368;
+            font-style:bold;
+        }
+
+    }
+
+
+    input {
+        text-align: center;
+        margin: 20px 0px;
+    }
+
+    div:last-child {
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        
+        button {
+            font-size: .75rem;
+            color: #000000;
+            background-color: #66c368;
+            text-transform:uppercase;
+            border:1px solid black;
+            padding:10px;
+            margin:20px;
+    
+            &:hover,
+            &:focus {
+                color:#ffffff;
+                background-color:darkgreen;
+            }
+            
+        }
+    }
+}

@@ -51,11 +51,6 @@ a:hover, a:active { text-decoration: none; }
   font-size: 1rem;
 }
 
-.sub-section-btn {
-  border: 1px solid black;
-  color:orange;
-}
-
 .tagline {
   font-size: 1rem;
   columns: #000000;;

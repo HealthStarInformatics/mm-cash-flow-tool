@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/ToolNav.scss';
+import '../styles/useQuestions.scss';
 
-const ToolNav = (props) => {
+const ToolNavOLD = (props) => {
         return(
             <div className="tool-nav-wrapper"> 
                     {props.prev ? (
@@ -32,4 +32,4 @@ const ToolNav = (props) => {
         );
 }
 
-export default ToolNav;
+export default ToolNavOLD;

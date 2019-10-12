@@ -1,6 +1,6 @@
 import React from 'react';
 
-import ToolNav from './ToolNav';
+import ToolNavOLD from './ToolNavOLD';
 
 import '../styles/Section.scss';
 
@@ -44,7 +44,7 @@ class Recommendation extends React.Component {
                    {cards}
                 </ul>
                 
-                <ToolNav back="/CFT/Summary" />
+                <ToolNavOLD back="/CFT/Summary" />
             </div>
         );
     }

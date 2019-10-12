@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-import ToolNav from './ToolNav';
+import ToolNavOLD from './ToolNavOLD';
 
 import '../styles/SubSection.scss';
 
@@ -10,7 +10,7 @@ const RecommendationSubSection = (props) => {
             <div className='sub-section-wrapper'>
                     <h1>Recommendations SubSection</h1>
                 
-                <ToolNav prev="/cft/Overview" next="/cft/Overview" />
+                <ToolNavOLD prev="/cft/Overview" next="/cft/Overview" />
             </div>
         );
 }

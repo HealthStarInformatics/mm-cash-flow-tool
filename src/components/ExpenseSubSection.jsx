@@ -2,7 +2,7 @@ import React from 'react';
 
 // import CFTTimePeriodNav from './CFTTimePeriodNav';
 // import InputList from './InputList';
-import ToolNav from './ToolNav';
+import ToolNavOLD from './ToolNavOLD';
 
 import '../styles/SubSection.scss';
 
@@ -11,7 +11,7 @@ const ExpenseSubSection = (props) => {
             <div className='sub-section-wrapper'>
                     <h1>Expense SubSection</h1>
                 
-                <ToolNav prev="/cft/Overview" next="/cft/SummarySubSection" />
+                <ToolNavOLD prev="/cft/Overview" next="/cft/SummarySubSection" />
             </div>
         );
 }
