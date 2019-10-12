@@ -6,8 +6,8 @@ import OtherTools from './OtherTools';
 const DMTKHome = () => {
     return(
         <div className="cft-home-wrapper">
-            <CFTHero />
-            <OtherTools />
+                <CFTHero />
+                <OtherTools />
         </div>
 
     );

@@ -10,7 +10,7 @@ const SummarySubSection = (props) => {
             <div className='sub-section-wrapper'>
                     <h1>Summary SubSection</h1>
                 
-                <ToolNav prev="/cft/CFTOverview" next="/cft/RecommendationsSubSection" />
+                <ToolNav prev="/cft/Overview" next="/cft/RecommendationsSubSection" />
             </div>
         );
 }

@@ -11,7 +11,7 @@ const ExpenseSubSection = (props) => {
             <div className='sub-section-wrapper'>
                     <h1>Expense SubSection</h1>
                 
-                <ToolNav prev="/cft/CFTOverview" next="/cft/SummarySubSection" />
+                <ToolNav prev="/cft/Overview" next="/cft/SummarySubSection" />
             </div>
         );
 }

@@ -10,7 +10,7 @@ const RecommendationSubSection = (props) => {
             <div className='sub-section-wrapper'>
                     <h1>Recommendations SubSection</h1>
                 
-                <ToolNav prev="/cft/CFTOverview" next="/cft/CFTOverview" />
+                <ToolNav prev="/cft/Overview" next="/cft/Overview" />
             </div>
         );
 }

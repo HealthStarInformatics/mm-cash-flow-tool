@@ -3,10 +3,12 @@ import React from 'react';
 // import CFTTimePeriodNav from './CFTTimePeriodNav';
 // import InputList from './InputList';
 import ToolNav from './ToolNav';
+import IncomeForm from './IncomeForm';
 
 import '../styles/Section.scss';
 
-const CFTOverview = (props) => {
+const Overview = (props) => {
+    console.log('Overview: props', props);
         return (
             <div className="sub-section-wrapper">
                 <div className="section-instructions">
@@ -22,11 +24,11 @@ const CFTOverview = (props) => {
                     <li>What's left is your ending balance.</li>
                     <li>Copy your ending balance for the week to the beginning balance of the next week..</li>
                 </ul>
-                
-                <ToolNav next="/CFT/IncomeStartingBalance" />
+                {/* <IncomeForm /> */}
+                <ToolNav next="/cft/IncomeForm" />
             </div>
         );
 }
 
-export default CFTOverview;
+export default Overview;
 

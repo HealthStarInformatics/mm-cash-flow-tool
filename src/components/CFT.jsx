@@ -1,10 +1,10 @@
-import React from 'react';
+import React from "react";
 
 import '../styles/CFT.scss';
 
 import CFTNav from './CFTNav';
-import CFTOverview from './CFTOverview';
-import Incomes from './Incomes';
+import Overview from './Overview';
+import IncomeForm from './IncomeForm';
 import Expenses from './Expenses';
 import Summary from './Summary';
 import Recommendations from './Recommendations';
@@ -19,12 +19,61 @@ import ExpenseSubSection from './ExpenseSubSection';
 import SummarySubSection from './SummarySubSection';
 import RecommendationsSubSection from './RecommendationsSubSection';
 
+export const CashFlowContext = new React.createContext();
+
+
+
 class CFT extends React.Component {
+
+    state = {
+        topics: ["Overview", "Income", "Expenses", "Summary", "Recommendations"],
+        currentSectionId:"Overview",
+        income: {
+            startingBalance: 128.00,
+            jobOne:0,
+            jobTwo:0,
+            housingSubsidy:0,
+            snap:0,
+            tanf:0,
+            other:0
+        },
+        expenses: {
+            cellphone:0,
+            debtPayment:0,
+            eatingOut:0,
+            educationChildcare:0,
+            entertainment:0,
+            groceriesSupplies:0,
+            healthExpenses:0,
+            helpingOthers:0,
+            housingUtilities:0,
+            pets:0,
+            savingsEmergency:0,
+            savingsEdOrRetirement:0,
+            transportation:0,
+            other:0
+        },
+        balance: {
+            week1:0,
+            week2:0,
+            week3:0,
+            week4:0,
+            week5:0
+        },
+        totalIncome:0,
+        totalexpenses:0,
+        section:"Overview",
+        subsection:""
+    }
+
+    
 
     displayedSection(section)  {
         switch(section) {
-            case 'Incomes':
-                return <Incomes />;
+            case 'Overview':
+                return <Overview />;
+            case 'IncomeForm':
+                return <IncomeForm />;
             case 'Expenses':
                 return <Expenses />;
             case 'Summary':
@@ -52,25 +101,35 @@ class CFT extends React.Component {
             case 'RecommendationsSubSection':
                 return <RecommendationsSubSection />;
             default:
-                return <CFTOverview />;
+                return console.log('this is a joke');
         }
     }
 
     render() {
-        let section = this.props.match.params.section;
+        console.log('CFT: this.props', this.props);
+        console.log('CFT: this.state.sectionId', this.state.currentSectionId);
+        let sectionId = this.props.match.params.sectionId;
+        console.log('section in CFT is ', sectionId);
+        const contextObject = {
+            ...this.state
+        };
+        
         return (
-            <main id="cft-wrapper">
-                <div className="cft-header">
-                    Cash Flow Tool
-                </div>
-                <div>
-                    <CFTNav activeSection={section} /> 
-                    {this.displayedSection(section)}
-                </div>
-            </main>
-
+                <main id="cft-wrapper">
+                    <div className="cft-header">
+                        Cash Flow Tool
+                    </div>
+                    <div>
+                        <CFTNav navtopics={this.state.topics} activeSection={sectionId} /> 
+                        {/* <Overview activeSection={section} /> */}
+                        {/* <SingleQuestion */}
+                        {this.displayedSection(sectionId)}
+                    </div>
+                </main>
+                
         );
     }
 }
+
 
 export default CFT;
