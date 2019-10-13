@@ -1,7 +1,6 @@
 import React from 'react';
 import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-// import QuestionsProvider from "./services/QuestionsProvider";
-import { QuestionsProvider } from "./services/QuestionsContext";
+import { QuestionsProvider } from "./QuestionsContext";
 
 
 //import logo from './logo.svg';

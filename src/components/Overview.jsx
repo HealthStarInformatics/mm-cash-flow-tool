@@ -1,8 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import ToolNavOLD from './ToolNavOLD';
+import { clearStorageAll } from '../hooks/storageServices';
 
 import '../styles/Section.scss';
+
+
 
 const Overview = (props) => {
     console.log('Overview: props', props);
@@ -21,7 +24,9 @@ const Overview = (props) => {
                     <li>What's left is your ending balance.</li>
                     <li>Copy your ending balance for the week to the beginning balance of the next week..</li>
                 </ul>
-                <ToolNavOLD next="/cft/UseQuestions" />
+                <Link to="/cft/Questions">
+                    <button className="card-btn" onClick={clearStorageAll}>Let's Add Your Data</button>
+                </Link>
             </div>
         );
 }

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/useQuestions.scss';
+import '../styles/Questions.scss';
 
 const ToolNavOLD = (props) => {
         return(

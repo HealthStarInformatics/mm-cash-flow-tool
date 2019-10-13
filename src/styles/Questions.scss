@@ -8,11 +8,12 @@
         .question-type {
             font-size: 1.8rem;
             text-align:left;
-            color:#66c368;
-            font-style:bold;
+           
         }
 
     }
+
+    
 
 
     input {
@@ -43,5 +44,21 @@
             }
             
         }
+    }
+
+    .income {
+        font-size: 2rem;
+        color:#66c368;
+        font-style:bold;
+        text-align:left;
+        text-transform:uppercase;
+    }
+
+    .expenses {
+        font-size: 2rem;
+        color:red;
+        font-style:bold;
+        text-align:left;
+        text-transform:uppercase;
     }
 }

@@ -4,7 +4,7 @@ import '../styles/CFT.scss';
 
 import CFTNav from './CFTNav';
 import Overview from './Overview';
-import UseQuestions from './UseQuestions';
+import Questions from './Questions';
 import Expenses from './Expenses';
 import Summary from './Summary';
 import Recommendations from './Recommendations';
@@ -36,8 +36,8 @@ class CFT extends React.Component {
         switch(section) {
             case 'Overview':
                 return <Overview />;
-            case 'UseQuestions':
-                return <UseQuestions />;
+            case 'Questions':
+                return <Questions />;
             case 'Expenses':
                 return <Expenses />;
             case 'Summary':
