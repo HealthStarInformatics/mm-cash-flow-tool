@@ -4,14 +4,13 @@ import "../styles/Questions.scss";
 
 import { saveToStorage } from '../hooks/storageServices';
 
-import { QuestionsContext } from "../QuestionsContext";
+import QuestionList from './QuestionList';
 
 function generateId() {
     return '_' + Math.random().toString(36).substr(2, 9);
 }
 
 function Questions() {
-    const [state,setState] = useContext(QuestionsContext);
     const [questionNumber, setQuestionNumber] = useState(1);
     const [answers, setAnswers] = useState([]);
     const [input, setInput] = useState(0);
@@ -20,13 +19,13 @@ function Questions() {
         // add answers to answers array
         setAnswers((answers) => answers.concat({
             amount: input,
-            type: state.questions[questionNumber].type,
-            qName: state.questions[questionNumber].name,
+            type: QuestionList[questionNumber].type,
+            qName: QuestionList[questionNumber].name,
             id: generateId()
         }))
 
         // save answers to local storage
-        saveToStorage(state.questions[questionNumber].name, input)
+        saveToStorage(QuestionList[questionNumber].name, input)
         
         //go to next question
         setQuestionNumber((questionNumber) => questionNumber + 1);
@@ -41,17 +40,17 @@ function Questions() {
         return (
                     <div className="question-wrapper">
                         <div>
-                             <p className={state.questions[questionNumber].type === 'income' ? 'income' : 'expenses'}>{state.questions[questionNumber].type} Question</p>
-                             <h2>{state.questions[questionNumber].name}</h2>
-                             <p className="description">{state.questions[questionNumber].desc}</p>
+                             <p className={QuestionList[questionNumber].type === 'income' ? 'income' : 'expenses'}>{QuestionList[questionNumber].type} Question</p>
+                             <h2>{QuestionList[questionNumber].name}</h2>
+                             <p className="description">{QuestionList[questionNumber].desc}</p>
                         </div>
                         <div>
                                      <input 
                                          type="number" 
-                                         name={state.questions[questionNumber].name}
+                                         name={QuestionList[questionNumber].name}
                                          value={input}
                                          className="input-values"
-                                        //  onChange={e => (saveToStorage(state.questions[questionNumber].name, e.target.value))}
+                                        //  onChange={e => (saveToStorage(state.QuestionList[questionNumber].name, e.target.value))}
                                          onChange={(e) => setInput(e.target.value)}
                                          />
                                          <ul>
