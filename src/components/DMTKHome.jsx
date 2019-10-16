@@ -1,5 +1,6 @@
 import React from 'react';
 
+import CFT from './CFT';
 import CFTHero from './CFTHero';
 import OtherTools from './OtherTools';
 

@@ -1,13 +1,18 @@
-import React from 'react';
+import React, {useContext } from 'react';
 import { Link } from 'react-router-dom';
+
+import { CFTContext } from "../App";
 
 import '../styles/CFTNav.scss';
 
 const isActiveSection = (active, section) => (active === section ? "active" : null);
 
 const CFTNav = (props) => {
-    const sections = props.navtopics.map(section => 
-        <li>
+
+    const state = useContext((CFTContext));
+    console.log('CFTNav: state', state);
+    const sections = state.topics.map(section => 
+        <li key={section}>
             <div className={isActiveSection(props.activeSection,{section})}>
                 <Link to={`/cft/${section}`}>{section}</Link>
             </div>
